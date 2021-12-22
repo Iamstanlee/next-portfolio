@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const HeaderText = styled.h1`
   font-size: 50px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   z-index: 9;
   @media only screen and (min-width: 450px) {

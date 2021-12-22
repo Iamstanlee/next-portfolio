@@ -23,6 +23,8 @@ export const ParaText = styled.p`
   font-weight: 200;
   padding: 0;
   text-align: center;
+  line-height: 24px;
+  letter-spacing: 1px;
   @media only screen and (min-width: 765px) {
     padding: 0 20%;
   }
