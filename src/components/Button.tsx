@@ -2,6 +2,7 @@ import { MouseEventHandler } from "react";
 import styled from "styled-components";
 
 const SButton = styled.button<IButton>`
+  z-index: 99;
   display: inline-block;
   border-radius: 0.5rem;
   padding: 0 1.5rem;

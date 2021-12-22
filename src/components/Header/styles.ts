@@ -5,11 +5,15 @@ export const Container = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   padding-top: 24px;
+  display: none;
+
+  @media only screen and (min-width: 765px) {
+    display: flex;
+  }
 `;
 
 export const Logo = styled.span`
