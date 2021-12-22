@@ -10,7 +10,8 @@ export const Container = styled.div`
   min-height: 600px;
   padding: 0 15px;
   @media only screen and (min-width: 765px) {
-    padding: 0;
+    padding: 0 15px;
+    
   }
 `;
 
@@ -25,6 +26,7 @@ export const HeaderText = styled.h1`
   }
   @media only screen and (min-width: 768px) {
     font-size: 98px;
+    max-width: 1000px;
   }
 `;
 
