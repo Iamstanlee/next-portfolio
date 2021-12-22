@@ -7,14 +7,25 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  min-height: 600px;
+  padding: 0 15px;
+  @media only screen and (min-width: 765px) {
+    padding: 0;
+  }
 `;
 
 export const HeaderText = styled.h1`
-  font-size: 98px;
+  font-size: 50px;
   text-align: center;
   font-weight: 100;
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   z-index: 9;
+  @media only screen and (min-width: 450px) {
+    font-size: 70px;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size: 98px;
+  }
 `;
 
 export const ColoredText = styled.span`

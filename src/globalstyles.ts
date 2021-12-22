@@ -16,6 +16,8 @@ const AppStyles = createGlobalStyle`
     }
     body,
     html {
+           margin: 0;
+    padding: 0;
         font-family: 'Almarena-Regular';
         background-color: ${(props) => (props.theme as ITheme).bgColor};
     }
