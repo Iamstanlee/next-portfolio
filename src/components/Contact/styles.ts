@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 20vh;
 
   @media only screen and (min-width: 765px) {
     padding: 0 8.54rem;
@@ -20,11 +20,12 @@ export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
 `;
 
-export const ParaText = styled.p`
+export const SpanText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   font-weight: 200;
   padding: 0;
   text-align: center;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 1px;
   @media only screen and (min-width: 765px) {
@@ -36,25 +37,10 @@ export const ColoredText = styled.span`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
 
-export const ColoredLinkText = styled.a`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
+export const ButtonWrapper = styled.div`
+  margin: 10px 0;
 `;
 
-export const Image = styled.img`
-  position: absolute;
-`;
-
-export const HandSignImage = styled(Image)`
-  max-width: 18.625em;
-  bottom: 10px;
-  left: 0;
-  display: none;
-  @media only screen and (min-width: 765px) {
-    display: block;
-  }
-`;
-
-export const BoltImage = styled(Image)`
-  width: 10.625em;
-  position: relative;
+export const SpaceY = styled.div<{ space: string }>`
+  margin-top: ${(props) => props.space || "12px"};
 `;

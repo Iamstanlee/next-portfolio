@@ -53,7 +53,6 @@ export const ThemeContextProvider: React.FC = ({ children }) => {
   useEffect(() => {
     setTheme({ type: ActionType.GET_THEME });
   }, []);
-  console.log(theme);
 
   return (
     <ThemeContext.Provider

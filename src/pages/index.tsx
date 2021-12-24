@@ -3,6 +3,8 @@ import Head from "next/head";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import { useThemeContext } from "../context/theme_context";
@@ -16,7 +18,6 @@ type Props = {
 
 const Home: NextPage<Props> = ({ app }: Props) => {
   const { mode: theme } = useThemeContext();
-
   return (
     <ThemeProvider theme={theme!}>
       <AppStyles />
@@ -27,7 +28,9 @@ const Home: NextPage<Props> = ({ app }: Props) => {
       </Head>
       <Header />
       <Hero hero={app.hero} />
-      <About about={app.about}/>
+      <About about={app.about} />
+      <Contact contact={app.contact} />
+      <Footer />
     </ThemeProvider>
   );
 };

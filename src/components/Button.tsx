@@ -2,13 +2,16 @@ import { MouseEventHandler } from "react";
 import styled from "styled-components";
 
 const SButton = styled.button<IButton>`
-  z-index: 99;
-  display: inline-block;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 16px;
   border-radius: 0.5rem;
   padding: 0 1.5rem;
   border: none;
   min-height: 50px;
-  min-width: ${(props) => props.width};
+  min-width: ${(props) => props.width || "178px"};
   background-color: ${(props) =>
     props.isPrimary ? props.theme.buttonPrimaryColor : props.theme.buttonColor};
   color: ${(props) => (props.isPrimary ? "#fff" : props.theme.textColor)};

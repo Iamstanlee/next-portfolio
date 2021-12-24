@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
   width: 100%;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   justify-content: center;
