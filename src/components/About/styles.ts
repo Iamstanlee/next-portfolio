@@ -11,8 +11,18 @@ export const Container = styled.div`
   align-items: center;
   min-height: 80vh;
 
+  @media only screen and (min-width: 570px) {
+    padding: 2rem 2.54rem;
+  }
+
   @media only screen and (min-width: 765px) {
-    padding: 0 8.54rem;
+    padding: 2rem 3.54rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding: 2rem 5.54rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 2rem 7.54rem;
   }
 `;
 
@@ -25,10 +35,10 @@ export const ParaText = styled.p`
   font-weight: 200;
   padding: 0;
   text-align: center;
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: 1px;
   @media only screen and (min-width: 765px) {
-    padding: 0 20%;
+    padding: 0 12%;
   }
 `;
 

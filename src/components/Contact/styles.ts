@@ -4,15 +4,23 @@ import { ITheme } from "../../utils/interfaces";
 export const Container = styled.div`
   box-sizing: border-box;
   position: relative;
-  padding: 0 15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-
+  @media only screen and (min-width: 570px) {
+    padding: 2rem 2.54rem;
+  }
   @media only screen and (min-width: 765px) {
-    padding: 0 8.54rem;
+    padding: 2rem 3.54rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding: 2rem 5.54rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 2rem 7.54rem;
   }
 `;
 

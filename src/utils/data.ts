@@ -1,4 +1,5 @@
 import { IApp } from "./interfaces";
+import { GithubLogo } from "phosphor-react";
 
 const app: IApp = {
   title: "Stanley Akpama",
@@ -21,6 +22,91 @@ const app: IApp = {
     email: "hey@stanleee.me",
     linkedin: "stan0x01",
     twitter: "iamstanlee_",
+  },
+  project: {
+    tag: "project",
+    project: [
+      {
+        title: "kivifood",
+        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "lastprice",
+        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "Jumga",
+        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "kivifood",
+        desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "lastprice",
+        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "Jumga",
+        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "Jumga",
+        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+      {
+        title: "Jumga",
+        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
+        links: [
+          {
+            icon: "icon",
+            url: "url",
+          },
+        ],
+      },
+    ],
   },
 };
 

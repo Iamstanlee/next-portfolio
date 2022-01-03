@@ -2500,6 +2500,11 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+phosphor-react@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.4.0.tgz#6c3d5f9d3433c3c2456b902891d24ec677f89dc3"
+  integrity sha512-K2/ZtkigHV/li5qfYPqY5fA7MLkWM52tW9ghBCyJc7JS5ykI/WD61JC8kFWaZ6yqlEHXPUJLHr+p+5uGsBnHmQ==
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz"
