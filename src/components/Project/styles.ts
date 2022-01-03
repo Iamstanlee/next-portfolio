@@ -32,7 +32,8 @@ export const Projects = styled.div`
   ::after {
     content: "";
     display: block;
-    margin-left: 33%;
+    margin-left: 65%;
+    margin-left: 50%;
   }
 `;
 export const Project = styled.div`
@@ -41,7 +42,7 @@ export const Project = styled.div`
   width: 100%;
   min-width: 150px;
   border: 1px solid #2f2f2f;
-  height: 150px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,20 +59,27 @@ export const Project = styled.div`
   }
   @media (min-width: 860px) {
     width: 23%;
-    height: 180px;
   }
   @media (min-width: 1024px) {
     width: 24%;
-    height: 180px;
   }
   @media (min-width: 1200px) {
-    height: 150px;
+    height: 200px;
   }
 `;
 export const Icons = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+`;
+export const Tag = styled.div`
+  background: ${(props) => (props.theme as ITheme).projectTitleColor};
+  color: ${(props) => (props.theme as ITheme).tooltipColor};
+  width: max-content;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin: 0 0 15px;
+  font-size: 13px;
 `;
 
 // Texts
@@ -88,18 +96,23 @@ export const TitleText = styled.h3`
   font-size: 24px;
   text-transform: capitalize;
   letter-spacing: 1px;
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 `;
 
 export const DescText = styled.p`
   color: ${(props) => (props.theme as ITheme).projectDescColor};
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 1px;
 `;
 
 export const IconText = styled.a`
+  color: ${(props) => (props.theme as ITheme).projectTitleColor};
   color: ${(props) => (props.theme as ITheme).projectDescColor};
-  padding-right: 8px;
+  padding-right: 15px;
+
+  :hover {
+    color: #36e2b2;
+  }
 `;

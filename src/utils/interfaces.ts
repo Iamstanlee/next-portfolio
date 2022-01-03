@@ -23,10 +23,12 @@ export interface IContact {
 export type Link = {
   icon: React.ReactElement;
   url: string;
+  tooltip:string;
 };
 
 export type Project = {
   title: string;
+  tag:string;
   desc: string;
   links: Link[];
 };
@@ -57,4 +59,5 @@ export interface ITheme {
   headerTextColor?: string;
   projectTitleColor?: string;
   projectDescColor?: string;
+  tooltipColor?:string;
 }

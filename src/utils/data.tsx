@@ -1,8 +1,9 @@
-import { AppStoreLogo, GooglePlayLogo } from "phosphor-react";
+import { AppStoreLogo, GooglePlayLogo, Eye, GithubLogo } from "phosphor-react";
 import { IApp } from "./interfaces";
 
 const app: IApp = {
   title: "Stanley Akpama",
+ 
   desc: "Stanlee's Porfolio and Resume",
   hero: {
     tag: "hero",
@@ -28,88 +29,70 @@ const app: IApp = {
     projects: [
       {
         title: "kivifood",
+        tag:"mobile development",
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
         links: [
           {
-            icon: <GooglePlayLogo color="#fff" size={24} />,
-            url: "https://play.google.com/store/apps/details?id=com.kivifood.app",
+            icon: <Eye size={24} />,
+            url: "https:kivifood.app",
+            tooltip: "Click to view the website",
           },
           {
-            icon: <AppStoreLogo color="#fff" size={24} />,
+            icon: <GooglePlayLogo size={24} />,
+            url: "https://play.google.com/store/apps/details?id=com.kivifood.app",
+            tooltip: "Click to view on playstore",
+          },
+          {
+            icon: <AppStoreLogo size={24} />,
             url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
+            tooltip: "Click to view on appstore",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
+            tooltip: "Click to view on github",
           },
         ],
       },
-      // {
-      //   title: "lastprice",
-      //   desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Jumga",
-      //   desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "kivifood",
-      //   desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "lastprice",
-      //   desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Jumga",
-      //   desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Jumga",
-      //   desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Jumga",
-      //   desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
-      //   links: [
-      //     {
-      //       icon: "icon",
-      //       url: "url",
-      //     },
-      //   ],
-      // },
+      {
+        title: "lastprice",
+        tag:"web development",
+        desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
+        links: [
+          {
+            icon: <Eye size={24} />,
+            url: "https://amazing-torvalds-02adef.netlify.app",
+            tooltip: "Click to view the website",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
+            tooltip: "Click to view on github",
+          },
+        ],
+      },
+      {
+        title: "Jumga",
+        tag:"web development",
+        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
+        links: [
+          {
+            icon: <Eye size={24} />,
+            url: "https://kivifood.app",
+            tooltip: "Click to view the website",
+          },
+
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
+            tooltip: "Click to view on github",
+          },
+        ],
+      },
+  
+   
     ],
   },
 };
