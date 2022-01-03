@@ -101,4 +101,5 @@ export const DescText = styled.p`
 
 export const IconText = styled.a`
   color: ${(props) => (props.theme as ITheme).projectDescColor};
+  padding-right: 8px;
 `;

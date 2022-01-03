@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
 import { ThemeProvider } from "styled-components";
@@ -10,7 +10,6 @@ import Hero from "../components/Hero";
 import Project from "../components/Project";
 import { useThemeContext } from "../context/theme_context";
 import AppStyles from "../globalstyles";
-import data from "../utils/data";
 import { IApp } from "../utils/interfaces";
 
 type Props = {
@@ -30,7 +29,7 @@ const Home: NextPage<Props> = ({ app }: Props) => {
       <Header />
       <Hero hero={app.hero} />
       <About about={app.about} />
-      <Project project={app.project}/>
+      <Project project={app.project} />
       <Contact contact={app.contact} />
 
       <Footer />
@@ -38,8 +37,8 @@ const Home: NextPage<Props> = ({ app }: Props) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  const props: Props = { app: data };
-  return { props };
-};
+// export const getStaticProps: GetStaticProps = async () => {
+//   const props: Props = { app: data };
+//   return { props };
+// };
 export default Home;

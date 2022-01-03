@@ -5,14 +5,14 @@ type ProjectProps = {
   project: IProject;
 };
 
-const Project: React.FC<ProjectProps> = ({ project: { tag, project } }) => {
+const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
   return (
     <S.Container>
       <S.HeaderText>
-        Check out my <S.ColoredText>{tag}</S.ColoredText>
+        Featured <S.ColoredText>{tag}</S.ColoredText>
       </S.HeaderText>
       <S.Projects>
-        {project.map((item,i) => (
+        {projects.map((item, i) => (
           <S.Project key={i}>
             <S.TitleText>{item.title}</S.TitleText>
             <S.DescText>{item.desc}</S.DescText>

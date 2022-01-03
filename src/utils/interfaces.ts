@@ -1,5 +1,3 @@
-import { ReactNode } from "react"
-
 export interface IHero {
   tag?: string;
   name: string;
@@ -23,24 +21,24 @@ export interface IContact {
 }
 
 export type Link = {
- icon: ReactNode,
- url: string;
-}
+  icon: React.ReactElement;
+  url: string;
+};
 
 export type Project = {
-   title: string,
-   desc: string,
-   links: Link[]
-}
+  title: string;
+  desc: string;
+  links: Link[];
+};
 
 export interface IProject {
   tag?: string;
-  project: Project[];
+  projects: Project[];
 }
 export interface IApp {
   title: string;
   desc: string;
-  hero: IHero;    
+  hero: IHero;
   about: IAbout;
   contact: IContact;
   project: IProject;
@@ -57,6 +55,6 @@ export interface ITheme {
   highlightTextColor?: string;
   paragraphTextColor?: string;
   headerTextColor?: string;
-  projectTitleColor?:string;
-  projectDescColor?:string;
+  projectTitleColor?: string;
+  projectDescColor?: string;
 }

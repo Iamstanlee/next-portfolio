@@ -3,7 +3,6 @@ import { ITheme } from "../../utils/interfaces";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -11,7 +10,6 @@ export const Container = styled.div`
   padding: 0 15px;
   @media only screen and (min-width: 765px) {
     padding: 0 15px;
-    
   }
 `;
 
