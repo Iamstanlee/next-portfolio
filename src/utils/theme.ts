@@ -5,6 +5,8 @@ export const lightTheme: ITheme = {
   buttonPrimaryColor: "#248aff",
   textColor: "grey",
   highlightTextColor: "#36e2b2",
+  projectTitleColor: "#000",
+  projectDescColor: "#484848",
 };
 
 export const darkTheme: ITheme = {
@@ -17,4 +19,6 @@ export const darkTheme: ITheme = {
   headerTextColor: "#fff",
   textColor: "hsla(0,0%,100%,0.4)",
   paragraphTextColor: "hsla(0,0%,100%,0.4)",
+  projectTitleColor: "#fff",
+  projectDescColor: "#7d7d7d",
 };

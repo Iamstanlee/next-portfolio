@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Project from "../components/Project";
 import { useThemeContext } from "../context/theme_context";
 import AppStyles from "../globalstyles";
 import data from "../utils/data";
@@ -29,7 +30,9 @@ const Home: NextPage<Props> = ({ app }: Props) => {
       <Header />
       <Hero hero={app.hero} />
       <About about={app.about} />
+      <Project project={app.project}/>
       <Contact contact={app.contact} />
+
       <Footer />
     </ThemeProvider>
   );
