@@ -11,7 +11,17 @@ export interface IAbout {
   bio: string;
   email: string;
   resumeUrl: string;
+  skills: Skills[];
 }
+export type Skills = {
+  title: string;
+  list: List[];
+};
+
+export type List = {
+  name: string;
+  data: string[];
+};
 
 export interface IContact {
   tag?: string;
@@ -23,7 +33,7 @@ export interface IContact {
 export type Link = {
   icon: React.ReactElement;
   url: string;
-  tooltip:string;
+  tooltip: string;
 };
 
 export type Project = {
@@ -37,6 +47,17 @@ export interface IProject {
   tag?: string;
   projects: Project[];
 }
+export interface IBlog {
+   tag:string;
+   blogs:Blog[]
+}
+export type Blog = {
+   title: string;
+   date: string;
+   text: string;
+   link: string;
+}
+
 export interface IApp {
   title: string;
   desc: string;
@@ -44,6 +65,7 @@ export interface IApp {
   about: IAbout;
   contact: IContact;
   project: IProject;
+  blog: IBlog
 }
 
 export interface ITheme {
@@ -57,7 +79,8 @@ export interface ITheme {
   highlightTextColor?: string;
   paragraphTextColor?: string;
   headerTextColor?: string;
-  projectTitleColor?: string;
+  titleColor?: string;
   projectDescColor?: string;
-  tooltipColor?:string;
+  tooltipColor?: string;
+  borderColor?: string;
 }

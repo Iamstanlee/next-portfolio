@@ -24,6 +24,7 @@ export const Container = styled.div`
 `;
 
 export const Projects = styled.div`
+
   display: flex;
   align-items: center;
   width: 100%;
@@ -45,25 +46,27 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: ${(props) => (props.theme as ITheme).borderColor};
 
-  @media (min-width: 570px) {
-    width: 36%;
+  //   @media (min-width: 570px) {
+  //     width: 36%;
+  //     margin: 1.5%;
+  //   }
+  @media (min-width: 670px) {
+    width: 38%;
     margin: 1.5%;
-  }
-  @media (min-width: 620px) {
-    width: 37%;
   }
   @media (min-width: 780px) {
     width: 39%;
   }
   @media (min-width: 860px) {
-    width: 23%;
+    width: 39%;
   }
   @media (min-width: 1024px) {
-    width: 24%;
+    width: 40%;
   }
   @media (min-width: 1200px) {
-    min-width: 32%;
+    min-width: 41.3%;
     height: 270px;
   }
 `;
@@ -83,7 +86,7 @@ export const Spaced = styled.div<{ height: string }>`
 `;
 
 export const Tag = styled.div`
-  background: ${(props) => (props.theme as ITheme).projectTitleColor};
+  background: ${(props) => (props.theme as ITheme).titleColor};
   color: ${(props) => (props.theme as ITheme).tooltipColor};
   width: max-content;
   border-radius: 5px;
@@ -104,7 +107,7 @@ export const ColoredText = styled.span`
 `;
 
 export const TitleText = styled.h3`
-  color: ${(props) => (props.theme as ITheme).projectTitleColor};
+  color: ${(props) => (props.theme as ITheme).titleColor};
   text-transform: capitalize;
   letter-spacing: 3px;
   margin: 0 0 20px;
@@ -123,7 +126,7 @@ export const DescText = styled.p`
 `;
 
 export const IconText = styled.a`
-  color: ${(props) => (props.theme as ITheme).projectTitleColor};
+  color: ${(props) => (props.theme as ITheme).titleColor};
   color: ${(props) => (props.theme as ITheme).projectDescColor};
   padding-right: 15px;
 

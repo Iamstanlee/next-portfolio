@@ -5,9 +5,10 @@ export const lightTheme: ITheme = {
   buttonPrimaryColor: "#248aff",
   textColor: "grey",
   highlightTextColor: "#36e2b2",
-  projectTitleColor: "#000",
+  titleColor: "#000",
   projectDescColor: "#484848",
   tooltipColor: "#fff",
+  borderColor: "1px solid #eaeaea",
 };
 
 export const darkTheme: ITheme = {
@@ -20,7 +21,8 @@ export const darkTheme: ITheme = {
   headerTextColor: "#fff",
   textColor: "hsla(0,0%,100%,0.4)",
   paragraphTextColor: "hsla(0,0%,100%,0.4)",
-  projectTitleColor: "#fff",
+  titleColor: "#fff",
   projectDescColor: "#7d7d7d",
   tooltipColor: "#000",
+  borderColor: "1px solid #1e1e1e",
 };
