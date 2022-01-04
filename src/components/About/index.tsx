@@ -5,7 +5,9 @@ type Props = {
   about: IAbout;
 };
 
-const About: React.FC<Props> = ({ about: { name, bio, email, resumeUrl } }) => {
+const About: React.FC<Props> = ({
+  about: { name, bio, email, resumeUrl, skills },
+}) => {
   return (
     <S.Container>
       <S.HeaderText>
@@ -21,6 +23,26 @@ const About: React.FC<Props> = ({ about: { name, bio, email, resumeUrl } }) => {
           {" chat! 📧"}
         </S.ColoredLinkText>
       </S.ParaText>
+
+      {skills.map((item, i) => (
+        <S.SkillContainer key={i}>
+          <S.SkillTitleText>{item.title}:</S.SkillTitleText>
+
+          <div style={{marginTop:"10px", width:"100%"}}>
+            {item.list.map((skill, index) => (
+              <S.SkillItem key={index}>
+                <S.DataNameText>{skill.name}:</S.DataNameText>
+                <div>
+                  {skill.data.map((data, i) => (
+                    <S.SkillText key={i}>{data}</S.SkillText>
+                  ))}
+                </div>
+              </S.SkillItem>
+            ))}
+          </div>
+        </S.SkillContainer>
+      ))}
+
       <S.BoltImage src="/assets/images/bolt.png" />
       <S.HandSignImage src="/assets/images/okay-hand.png" />
     </S.Container>

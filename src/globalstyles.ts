@@ -35,7 +35,7 @@ const AppStyles = createGlobalStyle`
 
 .tooltip-box {
   position: absolute;
-  background:  ${(props) => (props.theme as ITheme).projectTitleColor};
+  background:  ${(props) => (props.theme as ITheme).titleColor};
   color: ${(props) => (props.theme as ITheme).tooltipColor};
   padding: 5px;
   border-radius: 5px;

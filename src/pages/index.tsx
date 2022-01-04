@@ -3,6 +3,7 @@ import Head from "next/head";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import About from "../components/About";
+import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -30,6 +31,7 @@ const Home: NextPage<Props> = ({ app }: Props) => {
       <Hero hero={app.hero} />
       <About about={app.about} />
       <Project project={app.project} />
+      <Blog blog={app.blog} />
       <Contact contact={app.contact} />
 
       <Footer />
