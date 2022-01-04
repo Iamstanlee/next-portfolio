@@ -28,6 +28,8 @@ export const Container = styled.div`
 
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
+  font-size: 42px;
+  font-weight: 100;
 `;
 
 export const ParaText = styled.p`

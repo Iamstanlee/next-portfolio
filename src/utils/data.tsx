@@ -1,9 +1,14 @@
-import { AppStoreLogo, GooglePlayLogo, Eye, GithubLogo } from "phosphor-react";
+import {
+  AppStoreLogo,
+  GooglePlayLogo,
+  GithubLogo,
+  Globe,
+} from "phosphor-react";
 import { IApp } from "./interfaces";
 
 const app: IApp = {
   title: "Stanley Akpama",
- 
+
   desc: "Stanlee's Porfolio and Resume",
   hero: {
     tag: "hero",
@@ -29,70 +34,44 @@ const app: IApp = {
     projects: [
       {
         title: "kivifood",
-        tag:"mobile development",
+        tags: ["mobile", "web"],
         desc: "Kivifood is a platform where customers can get the food they want from the comfort of their homes.",
         links: [
           {
-            icon: <Eye size={24} />,
+            icon: <Globe size={24} />,
             url: "https:kivifood.app",
-            tooltip: "Click to view the website",
+            tooltip: "View the web",
           },
           {
             icon: <GooglePlayLogo size={24} />,
             url: "https://play.google.com/store/apps/details?id=com.kivifood.app",
-            tooltip: "Click to view on playstore",
+            tooltip: "View on playstore",
           },
           {
             icon: <AppStoreLogo size={24} />,
             url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
-            tooltip: "Click to view on appstore",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
-            tooltip: "Click to view on github",
+            tooltip: "View on appstore",
           },
         ],
       },
       {
         title: "lastprice",
-        tag:"web development",
+        tags: ["web"],
         desc: "Lastprice is an eccomerce platform where vendors can sell products at discounted or slashed prices.",
         links: [
           {
-            icon: <Eye size={24} />,
+            icon: <Globe size={24} />,
             url: "https://amazing-torvalds-02adef.netlify.app",
-            tooltip: "Click to view the website",
+            tooltip: "View the web",
           },
 
           {
             icon: <GithubLogo size={24} />,
-            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
-            tooltip: "Click to view on github",
+            url: "https://github.com/iamstanlee/last-price",
+            tooltip: "View on github",
           },
         ],
       },
-      {
-        title: "Jumga",
-        tag:"web development",
-        desc: "Jumga is a project built for a hackathon, it is an ecommerce store where customers get items they need.",
-        links: [
-          {
-            icon: <Eye size={24} />,
-            url: "https://kivifood.app",
-            tooltip: "Click to view the website",
-          },
-
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://apps.apple.com/us/app/kivi-food/id1588631598",
-            tooltip: "Click to view on github",
-          },
-        ],
-      },
-  
-   
     ],
   },
 };

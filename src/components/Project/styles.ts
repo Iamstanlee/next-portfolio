@@ -41,7 +41,6 @@ export const Project = styled.div`
   padding: 3rem 1.6rem;
   width: 100%;
   min-width: 150px;
-  border: 1px solid #2f2f2f;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -64,7 +63,8 @@ export const Project = styled.div`
     width: 24%;
   }
   @media (min-width: 1200px) {
-    height: 200px;
+    min-width: 32%;
+    height: 270px;
   }
 `;
 export const Icons = styled.div`
@@ -72,19 +72,31 @@ export const Icons = styled.div`
   align-items: center;
   width: 100%;
 `;
+
+export const TagRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Spaced = styled.div<{ height: string }>`
+  height: ${(props) => props.height};
+`;
+
 export const Tag = styled.div`
   background: ${(props) => (props.theme as ITheme).projectTitleColor};
   color: ${(props) => (props.theme as ITheme).tooltipColor};
   width: max-content;
   border-radius: 5px;
   padding: 3px 8px;
-  margin: 0 0 15px;
+  margin: 0 8px 15px 0;
   font-size: 13px;
 `;
 
 // Texts
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
+  font-size: 42px;
+  font-weight: 100;
 `;
 
 export const ColoredText = styled.span`
@@ -93,16 +105,19 @@ export const ColoredText = styled.span`
 
 export const TitleText = styled.h3`
   color: ${(props) => (props.theme as ITheme).projectTitleColor};
-  font-size: 24px;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin: 0 0 20px;
+  font-size: 38px;
+  font-weight: 100;
 `;
 
 export const DescText = styled.p`
   color: ${(props) => (props.theme as ITheme).projectDescColor};
   margin: 0 0 20px;
-  font-size: 15px;
+  font-weight: 200;
+  padding: 0;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 1px;
 `;

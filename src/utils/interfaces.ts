@@ -28,8 +28,8 @@ export type Link = {
 
 export type Project = {
   title: string;
-  tag:string;
   desc: string;
+  tags: string[];
   links: Link[];
 };
 
