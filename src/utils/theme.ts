@@ -7,6 +7,7 @@ export const lightTheme: ITheme = {
   highlightTextColor: "#36e2b2",
   projectTitleColor: "#000",
   projectDescColor: "#484848",
+  tooltipColor: "#fff",
 };
 
 export const darkTheme: ITheme = {
@@ -21,4 +22,5 @@ export const darkTheme: ITheme = {
   paragraphTextColor: "hsla(0,0%,100%,0.4)",
   projectTitleColor: "#fff",
   projectDescColor: "#7d7d7d",
+  tooltipColor: "#000",
 };

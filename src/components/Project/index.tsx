@@ -1,4 +1,5 @@
 import { IProject } from "../../utils/interfaces";
+import Tooltip from "../Tooltip";
 import * as S from "./styles";
 
 type ProjectProps = {
@@ -15,11 +16,12 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
         {projects.map((item, i) => (
           <S.Project key={i}>
             <S.TitleText>{item.title}</S.TitleText>
+            <S.Tag>{item.tag}</S.Tag>
             <S.DescText>{item.desc}</S.DescText>
             <S.Icons>
               {item.links.map((link) => (
                 <S.IconText key={link.url} href={link.url}>
-                  {link.icon}
+                  <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
                 </S.IconText>
               ))}
             </S.Icons>

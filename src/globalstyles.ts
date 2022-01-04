@@ -28,6 +28,29 @@ const AppStyles = createGlobalStyle`
     p {
           font-size: 18px;
     }
+
+    .tooltip-container {
+  position: relative;
+}
+
+.tooltip-box {
+  position: absolute;
+  background:  ${(props) => (props.theme as ITheme).projectTitleColor};
+  color: ${(props) => (props.theme as ITheme).tooltipColor};
+  padding: 5px;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  display: none;
+  width: max-content;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 24px;
+}
+
+.tooltip-box.visible {
+  display: block;
+}
+
 `;
 
 export default AppStyles;
