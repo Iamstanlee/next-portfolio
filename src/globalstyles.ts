@@ -26,12 +26,12 @@ const AppStyles = createGlobalStyle`
         color: inherit;
     }
     p {
-          font-size: 18px;
+        font-size: 18px;
+        font-weight: 100;
     }
-
     .tooltip-container {
-  position: relative;
-}
+        position: relative;
+  }
 
 .tooltip-box {
   position: absolute;
@@ -42,9 +42,9 @@ const AppStyles = createGlobalStyle`
   top: calc(100% + 5px);
   display: none;
   width: max-content;
-font-size: 14px;
-letter-spacing: 1px;
-line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
 
 .tooltip-box.visible {

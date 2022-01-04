@@ -5,23 +5,19 @@ type Props = {
   blog: IBlog;
 };
 
-const Blog: React.FC<Props> = ({ blog: { tag ,blogs} }) => {
+const Blog: React.FC<Props> = ({ blog: { tag, blogs } }) => {
   return (
     <S.Container>
-      <S.HeaderText>
-        Featured <S.ColoredText>{tag}</S.ColoredText>
-      </S.HeaderText>
-
+      <S.Span>
+        I write about data structures and algorithms, frontend and mobile
+        development on my free time, checkout some of my selected articles below
+      </S.Span>
       <S.BlogContainer>
         {blogs.map((blog, index) => (
           <S.BlogWrapper key={index}>
             <S.Time>{blog.date}</S.Time>
-            <S.HeaderText>
-              {blog.title}
-            </S.HeaderText>
-            <S.BlogText>
-              {blog.text}
-            </S.BlogText>
+            <S.HeaderText>{blog.title}</S.HeaderText>
+            <S.BlogText>{blog.text}</S.BlogText>
             <S.ContinueBtn href={blog.link}>CONTINUE READING</S.ContinueBtn>
           </S.BlogWrapper>
         ))}

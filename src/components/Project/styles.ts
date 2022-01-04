@@ -24,7 +24,6 @@ export const Container = styled.div`
 `;
 
 export const Projects = styled.div`
-
   display: flex;
   align-items: center;
   width: 100%;
@@ -46,7 +45,6 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: ${(props) => (props.theme as ITheme).borderColor};
 
   //   @media (min-width: 570px) {
   //     width: 36%;

@@ -32,9 +32,7 @@ export const Tag = styled.div`
   margin: 0 8px 15px 0;
   font-size: 13px;
 `;
-export const BlogContainer = styled.div`
-
-`
+export const BlogContainer = styled.div``;
 export const BlogWrapper = styled.div`
   display: flex;
   width: 100%;
@@ -47,8 +45,8 @@ export const BlogWrapper = styled.div`
   font-weight: 200;
   padding: 40px 0;
   border-bottom: ${(props) => (props.theme as ITheme).borderColor};
-  :last-child{
-     border-bottom: none;
+  :last-child {
+    border-bottom: none;
   }
 `;
 
@@ -60,8 +58,9 @@ export const HeaderText = styled.h1`
   line-height: 52px;
 `;
 
-export const ColoredText = styled.a`
-  color: ${(props) => (props.theme as ITheme).highlightTextColor};
+export const Span = styled.span`
+  color: ${(props) => (props.theme as ITheme).textColor};
+  font-weight: 100;
 `;
 export const Time = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
@@ -83,7 +82,7 @@ export const BlogText = styled.p`
 export const ContinueBtn = styled.a`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
   display: block;
-  font-weight: 500;
+  font-weight: 100;
   width: 100%;
   font-size: 15px;
   letter-spacing: 2px;

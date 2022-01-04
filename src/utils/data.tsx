@@ -27,45 +27,34 @@ const app: IApp = {
         title: "Actively working with",
         list: [
           {
-            name: "lang",
-            data: ["javascript, ", "typescript, ", "dart."],
+            name: "language",
+            data: ["javascript", "typescript", "dart", "kotlin"],
           },
           {
             name: "frontend",
-            data: ["react, ", "next,", "vue."],
+            data: ["reactjs", "nextjs"],
           },
           {
             name: "mobile",
-            data: ["flutter, ", "kotlin", "react-native."],
+            data: ["flutter", "react-native", "jetpack-compose"],
           },
           {
             name: "state-management",
-            data: ["redux, ", "vuex."],
-          },
-          {
-            name: "data-fetching",
-            data: ["axios, ", "fetch-api."],
+            data: ["redux", "recoiljs", "context API"],
           },
           {
             name: "styling",
-            data: ["bootstrap, ", "CSS3, ", "styled-components, ", "tailwind."],
-          },
-        ],
-      },
-      {
-        title: "Previously working with",
-        list: [
-          {
-            name: "state-management",
-            data: ["redux, ", "vuex."],
+            data: [
+              "CSS3",
+              "bootstrap",
+              "styled-components",
+              "chakra-ui",
+              "tailwindcss",
+            ],
           },
           {
-            name: "data-fetching",
-            data: ["axios, ", "fetch-api."],
-          },
-          {
-            name: "styling",
-            data: ["bootstrap, ", "CSS3, ", "styled-components, ", "tailwind."],
+            name: "database",
+            data: ["sqlite", "firebase", "graphql"],
           },
         ],
       },

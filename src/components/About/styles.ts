@@ -43,7 +43,6 @@ export const SkillItem = styled.div`
   padding: 5px 0;
   justify-content: center;
   width: 100%;
-  
 `;
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};

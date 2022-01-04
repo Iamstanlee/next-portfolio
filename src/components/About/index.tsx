@@ -27,16 +27,11 @@ const About: React.FC<Props> = ({
       {skills.map((item, i) => (
         <S.SkillContainer key={i}>
           <S.SkillTitleText>{item.title}:</S.SkillTitleText>
-
-          <div style={{marginTop:"10px", width:"100%"}}>
+          <div style={{ marginTop: "10px", width: "100%" }}>
             {item.list.map((skill, index) => (
-              <S.SkillItem key={index}>
+              <S.SkillItem key={[skill, index].join(".")}>
                 <S.DataNameText>{skill.name}:</S.DataNameText>
-                <div>
-                  {skill.data.map((data, i) => (
-                    <S.SkillText key={i}>{data}</S.SkillText>
-                  ))}
-                </div>
+                <S.SkillText>{skill.data.join(", ")}</S.SkillText>
               </S.SkillItem>
             ))}
           </div>
