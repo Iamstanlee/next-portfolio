@@ -48,15 +48,22 @@ export const Image = styled.img`
 `;
 
 export const SpiralImage = styled(Image)`
-  max-width: 8.625em;
-  bottom: 20%;
+  max-width: 6.625em;
+  bottom: 10%;
   left: 0;
+  @media only screen and (min-width: 570px) {
+    max-width: 8.625em;
+    bottom: 20%;
+  }
 `;
 
 export const SpiralImage1 = styled(Image)`
-  max-width: 8.625em;
+  max-width: 6.625em;
   bottom: 0;
   right: 0;
+  @media only screen and (min-width: 570px) {
+    max-width: 8.625em;
+  }
 `;
 
 const rotate = keyframes`
@@ -69,9 +76,12 @@ const rotate = keyframes`
 `;
 
 export const StarfishImage = styled(Image)`
-  width: 20.625em;
+  width: 15.625em;
 
   bottom: 20%;
   right: 20%;
   animation: ${rotate} 12s linear infinite;
+  @media only screen and (min-width: 570px) {
+    width: 20.625em;
+  }
 `;

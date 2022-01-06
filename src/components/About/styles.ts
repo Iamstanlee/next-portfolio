@@ -36,18 +36,30 @@ export const SkillContainer = styled.div`
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
+  @media only screen and (max-width: 570px) {
+    font-size: 16px;
+  }
 `;
 export const SkillItem = styled.div`
   display: flex;
   font-weight: 200;
   padding: 5px 0;
-  justify-content: center;
+
+  justify-content: flex-start;
+  flex-direction: column;
   width: 100%;
+  @media only screen and (min-width: 570px) {
+    justify-content: center;
+    flex-direction: row;
+  }
 `;
 export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   font-size: 42px;
   font-weight: 100;
+  @media only screen and (max-width: 570px) {
+    font-size: 34px;
+  }
 `;
 
 export const ParaText = styled.p`
@@ -59,7 +71,7 @@ export const ParaText = styled.p`
   letter-spacing: 1px;
 
   @media only screen and (min-width: 765px) {
-    padding: 0 12%;
+    padding: 0 4%;
   }
 `;
 

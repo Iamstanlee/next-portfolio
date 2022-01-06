@@ -37,8 +37,8 @@ export const Projects = styled.div`
   }
 `;
 export const Project = styled.div`
-  margin: 20px;
-  padding: 3rem 1.6rem;
+  margin: 0;
+  padding: 1rem 0;
   width: 100%;
   min-width: 150px;
   height: 250px;
@@ -46,10 +46,10 @@ export const Project = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  //   @media (min-width: 570px) {
-  //     width: 36%;
-  //     margin: 1.5%;
-  //   }
+    @media (min-width: 570px) {
+      padding: 3rem 1.6rem
+      margin: 20px;
+    }
   @media (min-width: 670px) {
     width: 38%;
     margin: 1.5%;
@@ -98,6 +98,9 @@ export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   font-size: 42px;
   font-weight: 100;
+  @media only screen and (max-width: 570px) {
+    font-size: 34px;
+  }
 `;
 
 export const ColoredText = styled.span`
@@ -111,6 +114,9 @@ export const TitleText = styled.h3`
   margin: 0 0 20px;
   font-size: 38px;
   font-weight: 100;
+  @media only screen and (max-width: 570px) {
+    font-size: 31px;
+  }
 `;
 
 export const DescText = styled.p`
@@ -121,6 +127,9 @@ export const DescText = styled.p`
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 1px;
+  @media only screen and (max-width: 570px) {
+    font-size: 15px;
+  }
 `;
 
 export const IconText = styled.a`
