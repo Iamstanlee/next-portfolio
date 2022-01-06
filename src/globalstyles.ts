@@ -29,6 +29,10 @@ const AppStyles = createGlobalStyle`
         font-size: 18px;
         font-weight: 100;
     }
+    h3 {
+        font-weight: 100;
+
+    }
     .tooltip-container {
         position: relative;
   }

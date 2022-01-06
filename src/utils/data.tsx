@@ -40,7 +40,7 @@ const app: IApp = {
           },
           {
             name: "state-management",
-            data: ["redux", "recoiljs", "context API"],
+            data: ["recoiljs", "jotai", "redux"],
           },
           {
             name: "styling",
@@ -117,18 +117,10 @@ const app: IApp = {
     tag: "blog",
     blogs: [
       {
-        title:
-          " Google AMP is dead! AMP pages no longer get preferential treatment in searches",
-        date: "MAY 18, 2021",
-        text: "Google is rolling out a significant change as a part of their page experience ranking algotithm in June 2021.",
-        link: "#",
-      },
-      {
-        title:
-          " Google AMP is dead! AMP pages no longer get preferential treatment in searches",
-        date: "MAY 18, 2021",
-        text: "Google is rolling out a significant change as a part of their page experience ranking algotithm in June 2021.",
-        link: "#",
+        title: "Leetcode #845 — Longest Mountain In Array",
+        date: "DEC 24, 2021",
+        text: "The leetcode #845 problem is a classical dynamic programming problem where we are asked to return the length of the longest mountain subarray from a given array. What is a mountain array? from the leetcode description, an array is a mountain array if it satisfies the following...",
+        link: "https://medium.com/@iamstanlee/leetcode-845-longest-mountain-in-array-256202687979",
       },
     ],
   },

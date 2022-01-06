@@ -1,16 +1,13 @@
-import {  useState } from "react";
-// import styled from "styled-components";
-
-
+import { useState } from "react";
 
 interface ITooltip {
-   text?:string;
+  text?: string;
   isPrimary?: boolean;
   width?: string;
 }
 
 const Tooltip: React.FC<ITooltip> = ({ children, text, ...rest }) => {
-      const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   return (
     <div className="tooltip-container">

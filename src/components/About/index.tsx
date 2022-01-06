@@ -15,7 +15,7 @@ const About: React.FC<Props> = ({
       </S.HeaderText>
       <S.ParaText>
         {bio} If you&#39;re hiring,
-        <S.ColoredLinkText href={`/${resumeUrl}`}>
+        <S.ColoredLinkText href={`/${resumeUrl}`} download={`${name}.pdf`}>
           {" Download my resume "}
         </S.ColoredLinkText>
         and let&#39;s
