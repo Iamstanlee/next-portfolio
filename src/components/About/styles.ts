@@ -50,6 +50,7 @@ export const SkillItem = styled.div`
   width: 100%;
   @media only screen and (min-width: 570px) {
     justify-content: center;
+    flex-direction: row;
   }
 `;
 export const HeaderText = styled.h1`
