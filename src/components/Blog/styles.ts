@@ -51,7 +51,9 @@ export const BlogWrapper = styled.div`
 
 export const Span = styled.span`
   color: ${(props) => (props.theme as ITheme).textColor};
-  font-weight: 100;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 1px;
 `;
 export const Time = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
@@ -66,6 +68,9 @@ export const BlogTitle = styled.p`
   line-height: 52px;
   hover: {
     color: ${(props) => (props.theme as ITheme).buttonPrimaryColor};
+  }
+  @media only screen and (max-width: 570px) {
+    font-size: 34px;
   }
 `;
 

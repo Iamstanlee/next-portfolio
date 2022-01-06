@@ -28,6 +28,9 @@ export const HeaderText = styled.h1`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
   font-size: 42px;
   font-weight: 100;
+  @media only screen and (max-width: 570px) {
+    font-size: 34px;
+  }
 `;
 
 export const SpanText = styled.span`
@@ -35,11 +38,14 @@ export const SpanText = styled.span`
   font-weight: 200;
   padding: 0;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: 1px;
+  @media only screen and (max-width: 570px) {
+    font-size: 16px;
+  }
   @media only screen and (min-width: 765px) {
-    padding: 0 20%;
+    padding: 0 4%;
   }
 `;
 

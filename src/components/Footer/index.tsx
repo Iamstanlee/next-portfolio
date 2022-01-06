@@ -7,17 +7,22 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 `;
 
 export const SpiralImage1 = styled.img`
   position: absolute;
-  max-width: 8.625em;
+  max-width: 5.625em;
   bottom: 0;
   right: 0;
+  @media only screen and (min-width: 570px) {
+    max-width: 8.625em;
+  }
 `;
 
 const Text = styled.span`
   color: ${(props) => props.theme.textColor};
+  z-index: 99;
 `;
 
 const Footer: React.FC = () => {
