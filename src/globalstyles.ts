@@ -4,12 +4,7 @@ import { ITheme } from "./utils/interfaces";
 const AppStyles = createGlobalStyle`
    @font-face {
       font-family: 'Almarena-Regular';
-      src: url("/assets/fonts/Almarena-Display-Regular.woff") format("woff");
-   }
-   @font-face {
-      font-family: 'Almarena-Regular';
       src: url("/assets/fonts/Almarena-Light_utwkum.woff") format("woff");
-      font-weight: 200;
    }
    *:focus {
       outline: none;
