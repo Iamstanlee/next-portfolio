@@ -55,6 +55,19 @@ export const ColoredText = styled.span`
 
 export const ButtonWrapper = styled.div`
   margin: 10px 0;
+
+  @media only screen and (min-width: 765px) {
+    margin: 0 8px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 765px) {
+    flex-direction: row;
+  }
 `;
 
 export const SpaceY = styled.div<{ space: string }>`

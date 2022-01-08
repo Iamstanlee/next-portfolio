@@ -9,8 +9,6 @@ export interface IAbout {
   tag?: string;
   name: string;
   bio: string;
-  email: string;
-  resumeUrl: string;
   skills: Skills[];
 }
 export type Skills = {
@@ -26,14 +24,13 @@ export type List = {
 export interface IContact {
   tag?: string;
   email: string;
-  linkedin: string;
-  twitter: string;
+  urls: (Link & { title: string })[];
 }
 
 export type Link = {
   icon: React.ReactElement;
   url: string;
-  tooltip: string;
+  tooltip?: string;
 };
 
 export type Project = {
@@ -48,15 +45,15 @@ export interface IProject {
   projects: Project[];
 }
 export interface IBlog {
-   tag:string;
-   blogs:Blog[]
+  tag: string;
+  blogs: Blog[];
 }
 export type Blog = {
-   title: string;
-   date: string;
-   text: string;
-   link: string;
-}
+  title: string;
+  date: string;
+  text: string;
+  link: string;
+};
 
 export interface IApp {
   title: string;
@@ -65,7 +62,7 @@ export interface IApp {
   about: IAbout;
   contact: IContact;
   project: IProject;
-  blog: IBlog
+  blog: IBlog;
 }
 
 export interface ITheme {

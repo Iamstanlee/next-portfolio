@@ -25,7 +25,8 @@ const AppStyles = createGlobalStyle`
    }
    a {
       text-decoration: none;
-      color: inherit;
+      color: #36e2b2;
+
    }
    p {
       font-size: 18px;

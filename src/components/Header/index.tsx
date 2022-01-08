@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useThemeContext } from "../../context/theme_context";
-import Button from "../Button";
+import { scrollTo } from "../../utils/scroll";
 import * as S from "./styles";
 
 const Header: FC = () => {
@@ -8,12 +8,16 @@ const Header: FC = () => {
   return (
     <S.Container>
       <S.LinkGroup>
-        <S.ListItem active>Home</S.ListItem>
-        <S.ListItem href="#contact">Contact</S.ListItem>
-        <S.ListItem>Blog</S.ListItem>
-        <S.ListItem onClick={(e) => toggleTheme?.()}>
-        {darkMode ? <SunIcon /> : <MoonIcon />}
-
+        {["About", "Contact", "Blog"].map((link, i) => (
+          <S.ListItem
+            key={[link, i].join(".")}
+            onClick={(_e) => scrollTo(link.toLowerCase())}
+          >
+            {link}
+          </S.ListItem>
+        ))}
+        <S.ListItem onClick={(_e) => toggleTheme?.()}>
+          {darkMode ? <SunIcon /> : <MoonIcon />}
         </S.ListItem>
       </S.LinkGroup>
     </S.Container>
@@ -25,7 +29,7 @@ const SunIcon: FC = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
-      style={{ height: "18px"}}
+      style={{ height: "18px" }}
       fill="currentColor"
     >
       <path
@@ -41,7 +45,7 @@ const MoonIcon: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      style={{ height: "18px"}}
+      style={{ height: "18px" }}
       viewBox="0 0 20 20"
       fill="currentColor"
     >

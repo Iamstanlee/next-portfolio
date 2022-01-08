@@ -22,7 +22,6 @@ export default function useBlog() {
           `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@iamstanlee&count=3&order_by=pubDate&api_key=${process.env.NEXT_PUBLIC_RSS2JSON_KEY}`
         );
         const json = await response.json();
-        console.log(json);
         if (json.status === "ok") {
           setArticles(
             (json.items as Item[]).map(

@@ -5,25 +5,13 @@ type Props = {
   about: IAbout;
 };
 
-const About: React.FC<Props> = ({
-  about: { name, bio, email, resumeUrl, skills },
-}) => {
+const About: React.FC<Props> = ({ about: { tag, name, bio, skills } }) => {
   return (
-    <S.Container>
+    <S.Container id={tag}>
       <S.HeaderText>
         Hi I&#39;m <S.ColoredText>{name}</S.ColoredText>
       </S.HeaderText>
-      <S.ParaText>
-        {bio} If you&#39;re hiring,
-        <S.ColoredLinkText href={`/${resumeUrl}`} download={`${name}.pdf`}>
-          {" Download my resume "}
-        </S.ColoredLinkText>
-        and let&#39;s
-        <S.ColoredLinkText href={`mailto:${email}`}>
-          {" chat! 📧"}
-        </S.ColoredLinkText>
-      </S.ParaText>
-
+      <S.ParaText dangerouslySetInnerHTML={{ __html: bio }}></S.ParaText>
       {skills.map((item, i) => (
         <S.SkillContainer key={i}>
           <S.SkillTitleText>{item.title}:</S.SkillTitleText>

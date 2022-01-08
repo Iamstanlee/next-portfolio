@@ -64,8 +64,8 @@ export const HeaderText = styled.h1`
 
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
-  font-weight: 200;
-  padding: 0;
+  font-weight: 100;
+  padding: 0 2%;
   text-align: center;
   line-height: 26px;
   letter-spacing: 1px;

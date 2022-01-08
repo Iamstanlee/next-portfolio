@@ -1,4 +1,5 @@
 import { IHero } from "../../utils/interfaces";
+import { scrollTo } from "../../utils/scroll";
 import Button from "../Button";
 import * as S from "./styles";
 
@@ -15,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ hero: { tagLine, catchPhrase } }) => {
       <S.SpiralImage src="/assets/images/spiral2.png" />
       <S.SpiralImage1 src="/assets/images/spiral1.png" />
       <S.StarfishImage src="/assets/images/starfish.png" />
-      <Button isPrimary width="178px">
+      <Button isPrimary onClick={(_e) => scrollTo("about")}>
         Learn More
       </Button>
     </S.Container>

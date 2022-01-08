@@ -6,11 +6,12 @@ type Props = {
   blog: IBlog;
 };
 
-const Blog: React.FC<Props> = ({ blog: { blogs } }) => {
+const Blog: React.FC<Props> = ({ blog: { tag, blogs } }) => {
   // const { articles, isLoading, error } = useBlog();
 
   return (
-    <S.Container>
+    <S.Container id={tag}>
+      <S.HeaderText>Blog</S.HeaderText>
       <S.Span>
         I write about data structures and algorithms, frontend and mobile
         development on my free time, checkout some of my selected articles below

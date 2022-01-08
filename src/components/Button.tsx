@@ -26,11 +26,26 @@ interface IButton {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
   isPrimary?: boolean;
   width?: string;
+  href?: string;
+  as?: "a";
 }
 
 const Button: React.FC<IButton> = ({ children, onClick, isPrimary, width }) => {
   return (
     <SButton onClick={onClick} isPrimary={isPrimary} width={width}>
+      {children}
+    </SButton>
+  );
+};
+
+export const AnchorButton: React.FC<IButton> = ({
+  children,
+  isPrimary,
+  width,
+  href,
+}) => {
+  return (
+    <SButton as="a" href={href} isPrimary={isPrimary} width={width}>
       {children}
     </SButton>
   );

@@ -9,7 +9,7 @@ type ProjectProps = {
 
 const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
   return (
-    <S.Container>
+    <S.Container id={tag}>
       <S.HeaderText>
         Featured <S.ColoredText>{tag}</S.ColoredText>
       </S.HeaderText>

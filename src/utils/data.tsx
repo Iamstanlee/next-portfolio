@@ -3,28 +3,28 @@ import {
   GooglePlayLogo,
   GithubLogo,
   Globe,
+  LinkedinLogo,
+  TwitterLogo,
+  FilePdf,
 } from "phosphor-react";
 import { IApp } from "./interfaces";
 
 const app: IApp = {
   title: "Stanley Akpama",
-
   desc: "Stanlee's Porfolio and Resume",
   hero: {
     tag: "hero",
     name: "Stanley Akpama",
-    catchPhrase: "Creative",
+    catchPhrase: "10x",
     tagLine: "Mobile And Frontend Developer",
   },
   about: {
     tag: "about",
     name: "Stanley",
-    bio: "I'm a blah blah blah blah blah blah, I've 3+ years of experience working with modern mobile and web technologies (Skills outlined below), I watch movies and animes when i'm doing any tech stuff.\n I'm currently looking for a full-time opportunity/gig as a mobile/frontend developer.",
-    email: "hey@stanleee.me",
-    resumeUrl: "/assets/resume.pdf",
+    bio: "I'm a blah blah blah blah blah blah, I've 3 years of experience working with modern mobile and web technologies. I'm a builder at heart, I co-founded and lead product for <a  href='https://kivifood.app'>kivifood</a>, an on-demand food delivery startup. I've learnt so much from the community so i'm trying to give back in any way i can, I currently mentor at <a href='https://andela.com/learning-community/'>Andela learning community</a> and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.",
     skills: [
       {
-        title: "Actively working with",
+        title: "I'm proficient and actively working with",
         list: [
           {
             name: "language",
@@ -44,13 +44,7 @@ const app: IApp = {
           },
           {
             name: "styling",
-            data: [
-              "CSS3",
-              "bootstrap",
-              "styled-components",
-              "chakra-ui",
-              "tailwindcss",
-            ],
+            data: ["CSS3", "styled-components", "chakra-ui", "tailwindcss"],
           },
           {
             name: "database",
@@ -63,8 +57,28 @@ const app: IApp = {
   contact: {
     tag: "contact",
     email: "hey@stanleee.me",
-    linkedin: "stan0x01",
-    twitter: "iamstanlee_",
+    urls: [
+      {
+        icon: <FilePdf size={22} />,
+        url: "/assets/Resume_Stanley_Akpama.pdf",
+        title: "Rèsume",
+      },
+      {
+        icon: <LinkedinLogo size={22} />,
+        url: "https://linkedin.com/in/stan0x01",
+        title: "Linkedin",
+      },
+      {
+        icon: <TwitterLogo size={22} />,
+        url: "https://twitter.com/iamstanlee_",
+        title: "Twitter",
+      },
+      {
+        icon: <GithubLogo size={22} />,
+        url: "https://github.com/iamstanlee",
+        title: "Github",
+      },
+    ],
   },
 
   project: {
@@ -92,6 +106,36 @@ const app: IApp = {
           },
         ],
       },
+      {
+        title: "Dokto",
+        tags: ["web"],
+        desc: "Dokto is a global Telehealth service that gives patients the opportunity to connect with licensed doctors, therapists, practitioners and specialists for on-demand, online medical consultations.",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://dokto.com",
+            tooltip: "View the web",
+          },
+        ],
+      },
+      {
+        title: "MV Player",
+        tags: ["mobile"],
+        desc: "MV Player is a video and audio media player application that support multiple file extensions. mp3, mp4, mpv etc.",
+        links: [
+          {
+            icon: <GooglePlayLogo size={24} />,
+            url: "https://play.google.com/store/apps/details?id=com.stanlee.mvplayer",
+            tooltip: "View on playstore",
+          },
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/Iamstanlee/MV-Player",
+            tooltip: "View on github",
+          },
+        ],
+      },
+
       {
         title: "lastprice",
         tags: ["web"],
