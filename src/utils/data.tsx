@@ -69,7 +69,7 @@ const app: IApp = {
       {
         icon: <FilePdf size={22} />,
         url: "/assets/Resume_Stanley_Akpama.pdf",
-        title: "Rèsume",
+        title: "Resume",
       },
       {
         icon: <LinkedinLogo size={22} />,
