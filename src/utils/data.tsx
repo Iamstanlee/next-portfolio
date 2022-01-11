@@ -28,27 +28,35 @@ const app: IApp = {
         list: [
           {
             name: "language",
-            data: ["javascript", "typescript", "dart", "kotlin"],
-          },
-          {
-            name: "frontend",
-            data: ["reactjs", "nextjs"],
+            data: ["javascript", "typescript", "dart"],
           },
           {
             name: "mobile",
-            data: ["flutter", "react-native", "jetpack-compose"],
+            data: ["flutter", "react-native"],
           },
           {
-            name: "state-management",
-            data: ["recoiljs", "jotai", "redux"],
+            name: "frontend",
+            data: ["reactjs", "nextjs", "recoiljs", "jotai", "redux"],
           },
           {
             name: "styling",
             data: ["CSS3", "styled-components", "chakra-ui", "tailwindcss"],
           },
           {
-            name: "database",
-            data: ["sqlite", "firebase", "graphql"],
+            name: "Testing/DevOps",
+            data: [
+              "Jest",
+              "Mocha",
+              "Flutter testing library",
+              "Git",
+              "Github Action",
+              "Jenkins",
+              "Circle CI",
+            ],
+          },
+          {
+            name: "Others",
+            data: ["REST API", "graphql", "firebase", "GCP"],
           },
         ],
       },
