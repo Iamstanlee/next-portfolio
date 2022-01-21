@@ -21,7 +21,7 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Stanley",
-    bio: "I'm a blah blah blah blah blah blah, I've 3 years of experience working with modern mobile and web technologies. I'm a builder at heart, I co-founded and lead product for <a  href='https://kivifood.app'>kivifood</a>, an on-demand food delivery startup. I've learnt so much from the community so i'm trying to give back in any way i can, I currently mentor at <a href='https://andela.com/learning-community/'>Andela learning community</a> and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.",
+    bio: "I'm a Mobile & Frontend Developer who's passionate about technology and how it can be used to solve problems. I'm a builder at heart, I co-founded and lead product for <a  href='https://kivifood.app'>kivifood</a>, an on-demand food delivery startup. I write clean, maintainable and scalable code because i believe in the quest to solve problems for the next billion users, I shouldn’t create one for developers like myself. I've learnt so much from the community so i'm trying to give back in any way i can, I currently mentor at <a href='https://andela.com/learning-community/'>Andela learning community</a> and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.",
     skills: [
       {
         title: "I'm proficient and actively working with",
