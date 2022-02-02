@@ -115,6 +115,35 @@ const app: IApp = {
         ],
       },
       {
+        title: "kivifood Vendor",
+        tags: ["mobile"],
+        desc: "Vendor app for kivifood application",
+        links: [
+          {
+            icon: <GooglePlayLogo size={24} />,
+            url: "https://play.google.com/store/apps/details?id=com.kivifood.vendor",
+            tooltip: "View on playstore",
+          },
+          {
+            icon: <AppStoreLogo size={24} />,
+            url: "https://apps.apple.com/us/app/kivifood-vendor/id1588656247",
+            tooltip: "View on appstore",
+          },
+        ],
+      },
+      {
+        title: "Linkfy_text",
+        tags: ["mobile"],
+        desc: "A lightweight flutter package to linkify texts containing urls, emails and hashtags like twitter does",
+        links: [
+          {
+            icon: <GithubLogo size={24} />,
+            url: "https://github.com/Iamstanlee/linkfy_text",
+            tooltip: "View on github",
+          },
+        ],
+      },
+      {
         title: "Dokto",
         tags: ["web"],
         desc: "Dokto is a global Telehealth service that gives patients the opportunity to connect with licensed doctors, therapists, practitioners and specialists for on-demand, online medical consultations.",
