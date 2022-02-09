@@ -3,8 +3,8 @@ import { ITheme } from "./utils/interfaces";
 
 const AppStyles = createGlobalStyle`
    @font-face {
-      font-family: 'Almarena-Regular';
-      src: url("/assets/fonts/Almarena-Light_utwkum.woff") format("woff");
+      font-family: 'MabryPro';
+      src: url("/assets/fonts/MabryPro.woff") format("woff");
    }
    *:focus {
       outline: none;
@@ -12,7 +12,7 @@ const AppStyles = createGlobalStyle`
    body,html {
       margin: 0;
       padding: 0;
-      font-family: 'Almarena-Regular';
+      font-family: 'MabryPro';
       background-color: ${(props) => (props.theme as ITheme).bgColor};
    }
    body{
