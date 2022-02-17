@@ -115,6 +115,18 @@ const app: IApp = {
         ],
       },
       {
+        title: "Expense Bud",
+        tags: ["mobile"],
+        desc: "An app to keep of track your expenses and stay on top of your game with detailed insights🚀",
+        links: [
+          {
+            icon: <Globe size={24} />,
+            url: "https://github.com/Iamstanlee/expense_bud",
+            tooltip: "View on github",
+          },
+        ],
+      },
+      {
         title: "kivifood Vendor",
         tags: ["mobile"],
         desc: "Vendor app for kivifood application",
@@ -132,7 +144,7 @@ const app: IApp = {
         ],
       },
       {
-        title: "Linkfy_text",
+        title: "Linkfy Text",
         tags: ["mobile"],
         desc: "A lightweight flutter package to linkify texts containing urls, emails and hashtags like twitter does",
         links: [
@@ -143,18 +155,7 @@ const app: IApp = {
           },
         ],
       },
-      {
-        title: "Dokto",
-        tags: ["web"],
-        desc: "Dokto is a global Telehealth service that gives patients the opportunity to connect with licensed doctors, therapists, practitioners and specialists for on-demand, online medical consultations.",
-        links: [
-          {
-            icon: <Globe size={24} />,
-            url: "https://dokto.com",
-            tooltip: "View the web",
-          },
-        ],
-      },
+
       {
         title: "MV Player",
         tags: ["mobile"],

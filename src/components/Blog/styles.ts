@@ -62,19 +62,18 @@ export const Span = styled.span`
   color: ${(props) => (props.theme as ITheme).textColor};
   font-weight: 200;
   line-height: 24px;
-  letter-spacing: 1px;
+  font-family: "Inter";
+  font-size: 15px;
 `;
-export const Time = styled.span`
+export const Time = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
 `;
-export const BlogTitle = styled.p`
+export const BlogTitle = styled.h2`
   color: ${(props) => (props.theme as ITheme).headerTextColor};
-  font-size: 42px;
-  font-weight: 100;
+  font-weight: 200;
   width: 100%;
-  line-height: 52px;
   hover: {
     color: ${(props) => (props.theme as ITheme).buttonPrimaryColor};
   }
@@ -83,17 +82,17 @@ export const BlogTitle = styled.p`
   }
 `;
 
-export const BlogText = styled.p`
+export const BlogText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0 0 25px;
-  font-size: 16px;
+  font-family: "Inter";
+  font-size: 15px;
   width: 100%;
 `;
 export const ContinueBtn = styled.a`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
   display: block;
-  font-weight: 100;
   width: 100%;
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
 `;

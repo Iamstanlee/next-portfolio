@@ -62,14 +62,17 @@ export const HeaderText = styled.h1`
   }
 `;
 
+export const Span = styled.span`
+  font-family: "Inter";
+  font-size: 15px;
+`;
+
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
-  font-weight: 100;
   padding: 0 2%;
   text-align: center;
   line-height: 26px;
-  letter-spacing: 1px;
-
+  word-spacing: 1px;
   @media only screen and (min-width: 765px) {
     padding: 0 4%;
   }
@@ -78,6 +81,7 @@ export const ParaText = styled.p`
 export const ColoredText = styled.span`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
+
 export const ColoredLinkText = styled.a`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
 `;
@@ -85,12 +89,16 @@ export const SkillTitleText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0;
 `;
-export const DataNameText = styled.span`
+export const DataNameText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   padding-right: 10px;
+  font-family: "Inter";
+  font-size: 15px;
 `;
-export const SkillText = styled.span`
+export const SkillText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).titleColor};
+  font-family: "Inter";
+  font-size: 15px;
 `;
 
 export const Image = styled.img`

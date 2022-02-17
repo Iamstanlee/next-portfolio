@@ -19,7 +19,6 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
             <S.Spaced height="14px" />
             <S.TitleText>
               {item.title}
-              <ArrowUpRight size={32} />
             </S.TitleText>
             <S.TagRow>
               {item.tags.map((tag, i) => (
@@ -30,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
             <S.Icons>
               {item.links.map((link, i) => (
                 <S.IconText key={[link.url, i].join(".")} href={link.url}>
-                  <Tooltip text={link.tooltip}>{link.icon}</Tooltip>
+                  {link.icon}
                 </S.IconText>
               ))}
             </S.Icons>

@@ -6,10 +6,11 @@ const SButton = styled.button<IButton>`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 16px;
   border-radius: 0.5rem;
   padding: 0 1.5rem;
   border: none;
+  font-family: "Inter";
+  font-size: 15px;
   min-height: 50px;
   min-width: ${(props) => props.width || "178px"};
   background-color: ${(props) =>

@@ -38,11 +38,11 @@ export const SpanText = styled.span`
   font-weight: 200;
   padding: 0;
   text-align: center;
-  font-size: 18px;
-  line-height: 24px;
   letter-spacing: 1px;
+  font-family: "Inter";
+  font-size: 15px;
   @media only screen and (max-width: 570px) {
-    font-size: 16px;
+    font-size: 14px;
   }
   @media only screen and (min-width: 765px) {
     padding: 0 4%;

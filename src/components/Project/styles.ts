@@ -23,6 +23,11 @@ export const Container = styled.div`
   }
 `;
 
+export const Span = styled.span`
+  font-family: "Inter";
+  font-size: 15px;
+`;
+
 export const Projects = styled.div`
   display: flex;
   align-items: center;
@@ -83,7 +88,7 @@ export const Spaced = styled.div<{ height: string }>`
   height: ${(props) => props.height};
 `;
 
-export const Tag = styled.div`
+export const Tag = styled(Span)`
   background: ${(props) => (props.theme as ITheme).titleColor};
   color: ${(props) => (props.theme as ITheme).tooltipColor};
   width: max-content;
@@ -119,12 +124,11 @@ export const TitleText = styled.h3`
   }
 `;
 
-export const DescText = styled.p`
+export const DescText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).projectDescColor};
   margin: 0 0 20px;
   font-weight: 200;
   padding: 0;
-  font-size: 17px;
   line-height: 24px;
   letter-spacing: 1px;
   @media only screen and (max-width: 570px) {

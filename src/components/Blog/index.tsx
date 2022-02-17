@@ -12,15 +12,11 @@ const Blog: React.FC<Props> = ({ blog: { tag, blogs } }) => {
   return (
     <S.Container id={tag}>
       <S.HeaderText>Blog</S.HeaderText>
-      <S.Span>
-        I write about data structures and algorithms, frontend and mobile
-        development on my free time, checkout some of my selected articles below
-      </S.Span>
       {blogs.map((blog, i) => (
         <S.BlogWrapper key={[blog.title, i].join(".")}>
           <S.Time>{blog.date}</S.Time>
           <S.BlogTitle>{blog.title}</S.BlogTitle>
-          <S.BlogText>{blog.text}...</S.BlogText>
+          <S.BlogText>{blog.text}</S.BlogText>
           <S.ContinueBtn href={blog.link}>CONTINUE READING</S.ContinueBtn>
         </S.BlogWrapper>
       ))}
