@@ -117,10 +117,15 @@ const app: IApp = {
       {
         title: "Expense Bud",
         tags: ["mobile"],
-        desc: "An app to keep of track your expenses and stay on top of your game with detailed insights🚀",
+        desc: "An app to keep of track your expenses and stay on top of your game with detailed insights 🚀",
         links: [
           {
-            icon: <Globe size={24} />,
+            icon: <GooglePlayLogo size={24} />,
+            url: "https://play.google.com/store/apps/details?id=com.app.expense_bud",
+            tooltip: "View on playstore",
+          },
+          {
+            icon: <GithubLogo size={24} />,
             url: "https://github.com/Iamstanlee/expense_bud",
             tooltip: "View on github",
           },

@@ -17,7 +17,9 @@ const Blog: React.FC<Props> = ({ blog: { tag, blogs } }) => {
           <S.Time>{blog.date}</S.Time>
           <S.BlogTitle>{blog.title}</S.BlogTitle>
           <S.BlogText>{blog.text}</S.BlogText>
-          <S.ContinueBtn href={blog.link}>CONTINUE READING</S.ContinueBtn>
+          <S.ContinueBtn href={blog.link} target="_blank">
+            CONTINUE READING
+          </S.ContinueBtn>
         </S.BlogWrapper>
       ))}
     </S.Container>

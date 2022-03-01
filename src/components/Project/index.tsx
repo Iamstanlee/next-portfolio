@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = ({ project: { tag, projects } }) => {
             <S.DescText>{item.desc}</S.DescText>
             <S.Icons>
               {item.links.map((link, i) => (
-                <S.IconText key={[link.url, i].join(".")} href={link.url}>
+                <S.IconText key={[link.url, i].join(".")} href={link.url} target="_blank">
                   {link.icon}
                 </S.IconText>
               ))}
