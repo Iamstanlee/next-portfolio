@@ -65,7 +65,7 @@ export const ThemeContextProvider: React.FC = ({ children }) => {
 
 export const useThemeContext = () => {
   const context = useContext(ThemeContext);
-  if (!context)
+  if (Object.keys(context).length === 0)
     throw new Error("ThemeContext must be used under a ThemeProvider");
   return context;
 };

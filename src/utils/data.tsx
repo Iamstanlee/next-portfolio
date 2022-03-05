@@ -99,7 +99,7 @@ const app: IApp = {
         links: [
           {
             icon: <Globe size={24} />,
-            url: "https:kivifood.app",
+            url: "https://kivifood.app",
             tooltip: "View the web",
           },
           {
@@ -170,11 +170,6 @@ const app: IApp = {
             icon: <GooglePlayLogo size={24} />,
             url: "https://play.google.com/store/apps/details?id=com.stanlee.mvplayer",
             tooltip: "View on playstore",
-          },
-          {
-            icon: <GithubLogo size={24} />,
-            url: "https://github.com/Iamstanlee/MV-Player",
-            tooltip: "View on github",
           },
         ],
       },
