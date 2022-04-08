@@ -70,6 +70,9 @@ export const Span = styled.span`
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   padding: 0 2%;
+  font-family: "Inter";
+  font-size: 16px;
+
   text-align: center;
   line-height: 26px;
   word-spacing: 1px;
@@ -88,6 +91,7 @@ export const ColoredLinkText = styled.a`
 export const SkillTitleText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0;
+  font-size: 15px;
 `;
 export const DataNameText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};

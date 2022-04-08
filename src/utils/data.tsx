@@ -21,14 +21,25 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Stanley",
-    bio: "I'm a Mobile & Frontend Developer who's passionate about technology and how it can be used to solve problems. I'm a builder at heart, I co-founded and lead product for <a  href='https://kivifood.app'>kivifood</a>, an on-demand food delivery startup. I write clean, maintainable and scalable code because i believe in the quest to solve problems for the next billion users, I shouldn’t create one for developers like myself. I've learnt so much from the community so i'm trying to give back in any way i can, I currently mentor at <a href='https://andela.com/learning-community/'>Andela learning community</a> and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.",
+    bio: `I'm a detail-oriented Mobile & Frontend Developer, I'm currently a Mobile Developer 
+    at <a  href='https://ourpass.co'>Pass</a> 
+    working on financial tools to revolutionize digital commerce in Africa.
+    <br/>
+    I'm a builder at heart, I co-founded and lead product for 
+    <a  href='https://kivifood.app'>kivifood</a>,
+    an on-demand food delivery startup. I write clean, maintainable and scalable code 
+    because i believe in the quest to solve problems for the next billion users,
+    I shouldn’t create one for developers like myself. 
+    I occasionally mentor at <a href='https://andela.com/learning-community/'>
+    Andela learning community</a>
+    and do open-source at <a href='https://github.com/iamstanlee'>Github</a>.`,
     skills: [
       {
         title: "I'm proficient and actively working with",
         list: [
           {
             name: "language",
-            data: ["javascript", "typescript", "dart"],
+            data: ["dart", "javascript", "typescript"],
           },
           {
             name: "mobile",
@@ -45,9 +56,8 @@ const app: IApp = {
           {
             name: "Testing/DevOps",
             data: [
-              "Jest",
-              "Mocha",
               "Flutter testing library",
+              "Jest",
               "Git",
               "Github Action",
               "Jenkins",
@@ -68,7 +78,7 @@ const app: IApp = {
     urls: [
       {
         icon: <FilePdf size={22} />,
-        url: "/assets/Resume_Stanley_Akpama.pdf",
+        url: "/assets/Stanley_Akpama_Resume.pdf",
         title: "Resume",
       },
       {
@@ -90,7 +100,7 @@ const app: IApp = {
   },
 
   project: {
-    tag: "project",
+    tag: "projects",
     projects: [
       {
         title: "kivifood",
@@ -134,7 +144,7 @@ const app: IApp = {
       {
         title: "kivifood Vendor",
         tags: ["mobile"],
-        desc: "Vendor app for kivifood application",
+        desc: "Vendor app for kivifood",
         links: [
           {
             icon: <GooglePlayLogo size={24} />,
