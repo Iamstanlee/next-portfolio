@@ -9,7 +9,7 @@ const SButton = styled.button<IButton>`
   border-radius: 0.5rem;
   padding: 0 1.5rem;
   border: none;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
   min-height: 50px;
   min-width: ${(props) => props.width || "178px"};

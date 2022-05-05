@@ -8,7 +8,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: "Inter";
+  font-family: "WNBA";
 `;
 
 export const SpiralImage1 = styled.img`

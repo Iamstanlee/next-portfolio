@@ -3,12 +3,8 @@ import { ITheme } from "./utils/interfaces";
 
 const AppStyles = createGlobalStyle`
    @font-face {
-      font-family: 'Punta';
-      src: url("/assets/fonts/PuntaLight.otf");
-   }
-   @font-face {
-      font-family: 'Inter';
-      src: url("/assets/fonts/Inter-Regular.ttf");
+      font-family: "WNBA";
+      src: url("/assets/fonts/WNBA-Regular.ttf");
    }
    
    *:focus {
@@ -23,19 +19,19 @@ const AppStyles = createGlobalStyle`
    }
 
    h1,h2,h3,h4,h5,h6 {
-      font-family: 'Punta';
+      font-family: "WNBA";
    }
 
    a {
       text-decoration: none;
       color: #36e2b2;
-      font-family: 'Inter';
+      font-family: "WNBA";
    }
 
    p {
       font-size: 17px;
-      font-family: 'Inter';
-      font-weight: 300;
+      font-family: "WNBA";
+      font-weight: 200;
       @media only screen and (max-width: 570px) {
       font-size: 15px;
          }   

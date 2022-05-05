@@ -24,7 +24,7 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
 `;
 

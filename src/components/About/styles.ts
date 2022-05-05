@@ -63,14 +63,14 @@ export const HeaderText = styled.h1`
 `;
 
 export const Span = styled.span`
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
 `;
 
 export const ParaText = styled.p`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   padding: 0 2%;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 16px;
 
   text-align: center;
@@ -96,12 +96,12 @@ export const SkillTitleText = styled.p`
 export const DataNameText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   padding-right: 10px;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
 `;
 export const SkillText = styled(Span)`
   color: ${(props) => (props.theme as ITheme).titleColor};
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
 `;
 

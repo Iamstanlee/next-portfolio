@@ -39,7 +39,7 @@ export const SpanText = styled.span`
   padding: 0;
   text-align: center;
   letter-spacing: 1px;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
   @media only screen and (max-width: 570px) {
     font-size: 14px;

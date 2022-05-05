@@ -62,7 +62,7 @@ export const Span = styled.span`
   color: ${(props) => (props.theme as ITheme).textColor};
   font-weight: 200;
   line-height: 24px;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
 `;
 export const Time = styled.p`
@@ -85,7 +85,7 @@ export const BlogTitle = styled.h2`
 export const BlogText = styled.span`
   color: ${(props) => (props.theme as ITheme).paragraphTextColor};
   margin: 0 0 25px;
-  font-family: "Inter";
+  font-family: "WNBA";
   font-size: 15px;
   width: 100%;
 `;
