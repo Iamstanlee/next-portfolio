@@ -110,6 +110,7 @@ export const HeaderText = styled.h1`
 
 export const ColoredText = styled.span`
   color: ${(props) => (props.theme as ITheme).highlightTextColor};
+  text-transform: capitalize;
 `;
 
 export const TitleText = styled.h3`

@@ -16,7 +16,7 @@ const app: IApp = {
     tag: "hero",
     name: "Stanley Akpama",
     catchPhrase: "10x",
-    tagLine: "Mobile And Frontend Developer",
+    tagLine: "Mobile And Frontend Engineer",
   },
   about: {
     tag: "about",
@@ -48,7 +48,7 @@ const app: IApp = {
           },
           {
             name: "frontend",
-            data: ["reactjs", "nextjs", "recoiljs", "jotai", "redux"],
+            data: ["reactjs", "nextjs", "recoiljs", "redux"],
           },
           {
             name: "styling",
@@ -61,6 +61,7 @@ const app: IApp = {
               "Jest",
               "Git",
               "Github Action",
+              "Codemagic",
               "Jenkins",
               "Circle CI",
             ],
