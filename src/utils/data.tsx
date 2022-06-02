@@ -21,8 +21,8 @@ const app: IApp = {
   about: {
     tag: "about",
     name: "Stanley",
-    bio: `I like to call myself a detail-oriented and product-minded Software Engineer, 
-    This is because of the great care i put into building products, I'm currently a Mobile Engineer 
+    bio: `I like to call myself a Product Engineer :), 
+    This is because of how I put my very core values(quality and attention to details) into building products, I'm currently a Mobile Engineer 
     at <a  href='https://ourpass.co'>Pass</a> 
     working on financial tools to revolutionize digital commerce in Africa.
     <br/>
